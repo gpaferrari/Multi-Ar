@@ -1,0 +1,36 @@
+/*design das marcas*/
+#marcas{
+    display: flex;    
+}
+#marcas li{
+    list-style: none;
+    flex-grow: 1;
+
+}
+#marcas img{
+    max-width: 100px;
+}
+
+/*design dos cards */
+.card{
+    overflow: hidden;
+    -moz-transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+}
+.card:hover{
+    -moz-transform: scale(0.2.0.2);
+    -webkit-transform: (0.2.0.2);
+    transform: (0.2.0.2);
+    border: blue solid;
+    border-radius: 5px;
+}
+
+.imgGrid{    
+    width: 250px;
+    height: 250px;
+}
+.imgGrid:hover{
+    border: black solid;
+    border-radius: 5px;
+}
