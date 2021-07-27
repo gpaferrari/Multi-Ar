@@ -1,3 +1,20 @@
+body{
+    padding: 20px;
+}
+
+/* Design da Nav */
+.container-fluid{
+    background-color:  rgba(77, 77, 77, 0.801);
+    border-radius: 5px;
+
+}
+.container-fluid a{
+    color: black;
+}
+.nav-link:hover{
+    color: white;
+}
+
 /*design das marcas*/
 #marcas{
     display: flex;    
@@ -34,3 +51,65 @@
     border: black solid;
     border-radius: 5px;
 }
+
+/*Design da imagem do link do whats*/
+.link {
+    border-radius: 50px;
+    list-style: none;
+    text-align: center;
+}
+
+.link a {
+    opacity: .6;
+}
+
+.link a:hover {
+    opacity: 1;
+}
+
+.link img {
+    max-width: 150px;     
+}
+
+#carouselGoogle{
+    border: solid black;
+    padding: 10px;
+    margin: 150px auto;
+    width: 700px;
+    height: 480px;
+    position: relative;
+    overflow: hidden;
+}
+
+/*Rodapé*/
+
+#rodape {  
+    background-color:  rgb(77, 77, 77);  
+}
+
+#rodape p, #rodape b{
+    color: white;
+    margin: 3px;
+    
+}
+#insta, #face{
+    list-style: none;
+    display: inline ;
+}
+
+#insta a, #face a{
+    opacity: .5;
+} 
+
+#insta a:hover, #face a:hover{
+    opacity: 1;
+}
+
+#insta img {
+    max-width: 50px;
+}
+
+#face img{
+    max-width: 35px;
+}
+
