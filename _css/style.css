@@ -71,6 +71,8 @@ body{
     max-width: 150px;     
 }
 
+/*comentario Google*/
+
 #carouselGoogle{
     border: solid black;
     padding: 10px;
@@ -79,6 +81,46 @@ body{
     height: 480px;
     position: relative;
     overflow: hidden;
+}
+
+/*cliente*/
+
+#cliente{
+    max-width: 100%;
+    padding: 10px;
+}
+
+#imgcli img{
+    width: 130px;
+    height: 60px;
+}
+#imgcli:hover{
+    animation-play-state: paused;
+}
+#imgcli li{
+    list-style: none;
+    flex-grow: 1;
+    
+}
+#imgcli{
+    padding: 5px;
+    display: flex;
+    animation-name: fila;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    
+    
+    animation-iteration-count: infinite;
+   
+}
+
+@keyframes fila{
+    100%{
+        transform: translateX(calc(100vw - 50px));
+    }
+    0%{
+        transform: translateX(calc(-100vw - 50px));
+    }
 }
 
 /*Rodapé*/
@@ -112,4 +154,126 @@ body{
 #face img{
     max-width: 35px;
 }
+
+/*Pagina Historia*/
+
+.historia{
+    display: grid;
+    grid-template-columns: 100px 100px
+}
+
+/*Pagina da Parceiro*/
+
+.col-md-8{
+    animation: fade 8s forwards;
+    opacity: 0;
+    }
+
+.col-md-8{
+overflow: hidden;
+position: relative;
+
+}    
+.col-md-8::before{
+    animation: text-reveal 4s ease forwards;
+    background-color: rgb(68, 65, 255);
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+@keyframes text-reveal{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(100%);
+    }
+}
+@keyframes fade{
+    to{
+        opacity: 1;
+    }
+}
+/* X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap*/
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 346px) {
+    #marcas img{
+        max-width: 30px;
+    }
+    #carouselGoogle{
+        width: 350px;
+        height: 200px;
+    }
+    #imgcli img{
+        height: 50px;
+    }
+
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    #marcas img{
+        max-width: 50px;
+    } 
+    #carouselGoogle{
+        width: 700px;
+        height: 480px;
+    }
+    #imgcli img{
+        height: 55px;
+    }
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+    #marcas img{
+        max-width: 100px;
+    }
+    #carouselGoogle{
+        width: 700px;
+        height: 480px;
+    } 
+    #imgcli img{
+    height: 60px;
+    } 
+}
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    #marcas img{
+        max-width: 120px;
+    }
+    #carouselGoogle{
+        width: 700px;
+        height: 480px;
+    } 
+    #imgcli img{
+    height: 60px;
+    } 
+}
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+    #marcas img{
+        max-width: 140px;
+    }
+    #carouselGoogle{
+        width: 700px;
+        height: 480px;
+    } 
+    #imgcli img{
+        height: 65px;
+    }
+ }
+
+
+
+
+
 
