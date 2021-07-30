@@ -157,9 +157,30 @@ body{
 
 /*Pagina Historia*/
 
-.historia{
+.imagen-historia{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 30%;
+
+    max-width: 100%;
+    
+}
+
+.carta-grid{
+    position: relative;
     display: grid;
-    grid-template-columns: 100px 100px
+    grid-template-columns: auto auto;
+    text-align: center;
+    
+}
+
+.carta{
+    padding: 5px;
+    margin: 100px auto ;
+    text-align: center;
+    color: blanchedalmond;
+    background-color: rgba(0, 0, 0, 0.507);
 }
 
 /*Pagina da Parceiro*/
@@ -201,7 +222,7 @@ position: relative;
 /* X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap*/
 
-/* Small devices (landscape phones, 576px and up)*/
+/* Small devices (landscape phones, 346px and up)*/
 @media (min-width: 346px) {
     #marcas img{
         max-width: 30px;
@@ -212,6 +233,9 @@ position: relative;
     }
     #imgcli img{
         height: 50px;
+    }
+    .carta-grid{
+        grid-template-columns: auto;
     }
 
  }
@@ -228,6 +252,10 @@ position: relative;
     #imgcli img{
         height: 55px;
     }
+    .carta-grid{
+        grid-template-columns: auto auto;
+        
+    }
  }
 
 /* Large devices (desktops, 992px and up)*/
@@ -241,6 +269,10 @@ position: relative;
     } 
     #imgcli img{
     height: 60px;
+    }
+    .carta-grid{
+        grid-template-columns: auto auto;
+        
     } 
 }
 
@@ -255,6 +287,10 @@ position: relative;
     } 
     #imgcli img{
     height: 60px;
+    }
+    .carta-grid{
+        grid-template-columns: auto auto;
+        
     } 
 }
 
@@ -269,6 +305,10 @@ position: relative;
     } 
     #imgcli img{
         height: 65px;
+    }
+    .carta-grid{
+        grid-template-columns: auto auto;
+       
     }
  }
 
