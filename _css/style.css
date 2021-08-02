@@ -123,10 +123,32 @@ body{
     }
 }
 
+/* link whats */
+
+#link1 {
+    border-radius: 50px;
+    background-color: rgb(175, 175, 175);
+    list-style: none;
+    text-align: center;
+}
+
+#link1 a {
+    opacity: .6;
+}
+
+#link1 a:hover {
+    opacity: 1;
+}
+
+#link1 img {
+    max-width: 150px;     
+}
+
 /*Rodapé*/
 
 #rodape {  
-    background-color:  rgb(77, 77, 77);  
+    background-color:  rgb(77, 77, 77);
+    border-radius: 5px;  
 }
 
 #rodape p, #rodape b{
@@ -219,6 +241,21 @@ position: relative;
         opacity: 1;
     }
 }
+
+.galeria{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    width: 310px;
+    padding: 10px;
+    justify-content: center;    
+    margin: auto;
+}
+
+.glimg{
+    border: aquamarine solid;
+    text-align: center;
+    
+}
 /* X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap*/
 
@@ -237,8 +274,10 @@ position: relative;
     .carta-grid{
         grid-template-columns: auto;
     }
-
- }
+    .galeria{
+        grid-template-columns: auto;
+    }
+}    
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
@@ -253,10 +292,12 @@ position: relative;
         height: 55px;
     }
     .carta-grid{
-        grid-template-columns: auto auto;
-        
+        grid-template-columns: auto auto;        
     }
- }
+    .galeria{
+        grid-template-columns: auto auto;
+    }
+}    
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) { 
@@ -272,9 +313,11 @@ position: relative;
     }
     .carta-grid{
         grid-template-columns: auto auto;
-        
-    } 
-}
+    }
+    .galeria{
+        grid-template-columns: auto auto auto; 
+    }
+}    
 
 /* X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
@@ -289,9 +332,11 @@ position: relative;
     height: 60px;
     }
     .carta-grid{
-        grid-template-columns: auto auto;
-        
-    } 
+        grid-template-columns: auto auto;    
+    }
+    .galeria{
+        grid-template-columns: auto auto auto auto; 
+    }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up)*/
@@ -310,10 +355,5 @@ position: relative;
         grid-template-columns: auto auto;
        
     }
+    
  }
-
-
-
-
-
-
