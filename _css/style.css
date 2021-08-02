@@ -124,12 +124,12 @@ body{
 }
 
 /* link whats */
-
 #link1 {
     border-radius: 50px;
     background-color: rgb(175, 175, 175);
     list-style: none;
     text-align: center;
+    
 }
 
 #link1 a {
@@ -148,7 +148,7 @@ body{
 
 #rodape {  
     background-color:  rgb(77, 77, 77);
-    border-radius: 5px;  
+    border-radius: 5px; 
 }
 
 #rodape p, #rodape b{
@@ -183,10 +183,8 @@ body{
     position: absolute;
     left: 0px;
     right: 0px;
-    top: 30%;
-
-    max-width: 100%;
-    
+    top: 20%;
+    max-width: 100%;    
 }
 
 .carta-grid{
@@ -354,6 +352,9 @@ position: relative;
     .carta-grid{
         grid-template-columns: auto auto;
        
+    }
+    #link1{
+        margin-top: 7%;
     }
     
  }
