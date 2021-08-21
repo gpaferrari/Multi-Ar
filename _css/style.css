@@ -91,16 +91,20 @@ body{
 }
 
 #imgcli img{
-    width: 130px;
+    width: 120px;
     height: 60px;
+    
+    
 }
 #imgcli:hover{
     animation-play-state: paused;
 }
 #imgcli li{
+    margin: 5px;
     list-style: none;
     flex-grow: 1;
-    
+    border-radius: 5px;
+
 }
 #imgcli{
     padding: 5px;
@@ -252,6 +256,8 @@ position: relative;
 .glimg{
     border: aquamarine solid;
     text-align: center;
+    object-fit: cover;
+    object-position: center;
     
 }
 /* X-Small devices (portrait phones, less than 576px)
