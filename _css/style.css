@@ -30,26 +30,34 @@ body{
 
 /*design dos cards */
 .card{
+    margin: auto auto;
     overflow: hidden;
     -moz-transition: all 0.1s;
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
 }
-.card:hover{
-    -moz-transform: scale(0.2.0.2);
-    -webkit-transform: (0.2.0.2);
-    transform: (0.2.0.2);
-    border: blue solid;
-    border-radius: 5px;
-}
 
-.imgGrid{    
+.imgGrid{   
+    margin: 5px auto; 
     width: 250px;
     height: 250px;
 }
 .imgGrid:hover{
     border: black solid;
     border-radius: 5px;
+}
+
+/*Design do prodto*/
+
+.container{
+    margin: auto auto;
+}
+
+.row {
+    margin: 5px auto;
+}
+.col {
+    margin: 5px auto;
 }
 
 /*Design da imagem do link do whats*/
@@ -71,12 +79,32 @@ body{
     max-width: 150px;     
 }
 
+/*design calculadora*/
+#caculoBtus {
+    text-align: center;
+}
+
+#calculoBtus img{
+    width: 350px;
+    height: 300px;
+    max-width: 100%;
+    max-width: 100%;
+    margin: 10px auto; 
+    cursor: pointer;
+       
+}
+
+#calculoBtus img:hover{
+    border: blue solid;
+    border-radius: 5px;
+}
+
 /*comentario Google*/
 
 #carouselGoogle{
     border: solid black;
     padding: 10px;
-    margin: 150px auto;
+    margin: 50px auto;
     width: 700px;
     height: 480px;
     position: relative;
@@ -92,7 +120,7 @@ body{
 
 #imgcli img{
     width: 120px;
-    height: 60px;
+    height: 100px;
     
     
 }
@@ -110,7 +138,7 @@ body{
     padding: 5px;
     display: flex;
     animation-name: fila;
-    animation-duration: 15s;
+    animation-duration: 20s;
     animation-timing-function: linear;
     
     
@@ -123,8 +151,9 @@ body{
         transform: translateX(calc(100vw - 50px));
     }
     0%{
-        transform: translateX(calc(-100vw - 50px));
+        transform: translateX(calc(-150vw - 50px));
     }
+    
 }
 
 /* link whats */
@@ -183,14 +212,11 @@ body{
 
 /*Pagina Historia*/
 
-.imagen-historia{
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 27%;
-    max-width: 100%;    
-}
+.historia {
+    background-image: url(../_imagem/crescimento.jpeg);
+    background-size: 100%;
 
+}
 .carta-grid{
     position: relative;
     display: grid;
@@ -203,8 +229,8 @@ body{
     padding: 5px;
     margin: 100px auto ;
     text-align: center;
-    color: blanchedalmond;
-    background-color: rgba(0, 0, 0, 0.507);
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.603);
 }
 
 /*Pagina da Parceiro*/
@@ -256,8 +282,7 @@ position: relative;
 .glimg{
     border: aquamarine solid;
     text-align: center;
-    object-fit: cover;
-    object-position: center;
+    
     
 }
 /* X-Small devices (portrait phones, less than 576px)
