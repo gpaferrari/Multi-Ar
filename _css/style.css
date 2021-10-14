@@ -4,15 +4,23 @@ body{
 
 /* Design da Nav */
 .container-fluid{
-    background-color:  rgba(77, 77, 77, 0.801);
+    background-color:  rgb(77, 77, 77);
     border-radius: 5px;
 
 }
+.navbar-brand img:hover{
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+    transition: 0.6s;
+}
 .container-fluid a{
-    color: black;
+    color: white;
 }
 .nav-link:hover{
-    color: white;
+    color: black;
+    background-color: rgba(221, 221, 221, 0.226);
+    border-radius: 5px;
 }
 
 /*design das marcas*/
@@ -212,9 +220,9 @@ body{
 
 /*Pagina Historia*/
 
-.historia {
-    background-image: url(../_imagem/crescimento.jpeg);
-    background-size: 100%;
+.bannerHistoria {
+   max-width: 100%;
+   max-height: 100%;
 
 }
 .carta-grid{
@@ -222,6 +230,8 @@ body{
     display: grid;
     grid-template-columns: auto auto;
     text-align: center;
+    
+    
     
 }
 
@@ -231,60 +241,52 @@ body{
     text-align: center;
     color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.603);
+    
 }
 
-/*Pagina da Parceiro*/
+.carta h5{
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
 
-.col-md-8{
-    animation: fade 8s forwards;
+.carta p{
+    animation: transparencia 10s forwards;
+    animation-delay: 4s;
+    overflow: hidden;
     opacity: 0;
-    }
-
-.col-md-8{
-overflow: hidden;
-position: relative;
-
-}    
-.col-md-8::before{
-    animation: text-reveal 4s ease forwards;
-    background-color: rgb(68, 65, 255);
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
 }
-@keyframes text-reveal{
+ 
+.animacaopisca{
+    animation: pisca 500ms steps(40) 4s normal, typing 4s steps(40) 1s normal;
+    animation-delay: 2s;
+}
+
+@keyframes typing{
     from{
-        transform: translateX(-100%);
+        width: 0;
     }
+
     to{
-        transform: translateX(100%);
-    }
+        width: 16em;
+        }
 }
-@keyframes fade{
-    to{
+
+@keyframes transparencia{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
         opacity: 1;
     }
 }
 
-.galeria{
-    display: grid;
-    grid-template-columns: auto auto auto auto ;
-    width: 310px;
-    padding: 10px;
-    justify-content: center;    
-    margin: auto;
-}
-
-.glimg{
-    border: aquamarine solid;
-    text-align: center;
-    
-    
-}
 /* X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap*/
 
@@ -306,6 +308,7 @@ position: relative;
     .galeria{
         grid-template-columns: auto;
     }
+
 }    
 
 /* Medium devices (tablets, 768px and up)*/
@@ -326,6 +329,8 @@ position: relative;
     .galeria{
         grid-template-columns: auto auto;
     }
+
+
 }    
 
 /* Large devices (desktops, 992px and up)*/

@@ -67,7 +67,7 @@ fieldset.grupo .campo{
 .campo input:focus, .campo select:focus, .campo textarea:focus {
 background: #E0E0F8;
 }
-.botao {
+.enviar {
 margin-top: 5px;    
 font-size: 1.2em;
 background: #3700ff;
@@ -83,12 +83,13 @@ left: 50%;
 margin-right: -50%;
 transform: translate(-50%, -50%)
 }
-.botao:hover {
+.enviar:hover {
 background: #CCBBFF;
 box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
 text-shadow: none;
+
 }
 
-.botao, select{
+.enviar, select{
 cursor: pointer;
 }

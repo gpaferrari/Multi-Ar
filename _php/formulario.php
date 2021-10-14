@@ -26,7 +26,7 @@ if(mail($to,$subejet,$body,$header)){
     echo("Email enviado com sucesso!");
 
 }else{
-    echo("Email não pode ser!");
+    echo("Email não pode ser enviado!");
 }            
             
 }

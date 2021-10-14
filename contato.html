@@ -13,17 +13,17 @@
 
 </head>
 <!--Cabeçalho do site -->
+
 <body>
     <header>
         <nav class="navbar navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="_imagem/logo.png" alt="" width="180" height="80"></a>
+                <a class="navbar-brand" href="index.html"><img src="_imagem/logo.png" alt="" width="180"
+                        height="80"></a>
                 <ul class="nav justify-content-end">
                     <li class="nav-item">
                         <a class="nav-link " href="historia.html">História</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="parceiro.html">Parceiro</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contato.html">Contato</a>
@@ -32,47 +32,47 @@
             </div>
         </nav>
     </header>
-    
+
     <!--Formulario-->
     <div class="corpo">
-    <div id="titulo">
-        <h2 align="center">E-mail</h2>
-    </div>
-    <form method="POST" action="_php/formulario.php">
-        <fieldset class="grupo">
-            <div class="campo">
-                <label name="nome" for="nome">NOME:</label>
-                <input type="text">
-            </div>
-            <div class="campo">
-                <label for="tel" name="tel">TEL/CEL:</label>
-                <input type="text">
-            </div>
-            <div class="campo">
-                <label for="email" name="email">E-MAIL:</label>
-                <input type="text">
-            </div>
-            <div class="campo">
-                <label name="motivo">Motivo do contato:</label>
-                <select>
-                    <option type="radio" value="Compra">Compra
-                    <option type="radio" value="manutencao">Manutenção
-                    <option type="radio" value="instalacao">Instalação
-                    <option type="radio" value="compraInstalacao">Compra e Instalação
-                </select>
-            </div>
-            <div class="campo">
-                <textarea rows="6" style="width: 26em" id="experiencia" name="mensagem"></textarea>
-            </div>
-            <button onclick="enviar()" class="botao">Enviar</button>
-        </fieldset>
-    </form>
+        <div id="titulo">
+            <h2 align="center">E-mail</h2>
+        </div>
+        <form method="POST" action="_php/formulario.php">
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label name="nome" for="nome">NOME:</label>
+                    <input type="text">
+                </div>
+                <div class="campo">
+                    <label for="tel" name="tel">TEL/CEL:</label>
+                    <input type="text">
+                </div>
+                <div class="campo">
+                    <label for="email" name="email">E-MAIL:</label>
+                    <input type="email">
+                </div>
+                <div class="campo">
+                    <label name="motivo">Motivo do contato:</label>
+                    <select>
+                        <option type="radio" value="Compra">Compra
+                        <option type="radio" value="manutencao">Manutenção
+                        <option type="radio" value="instalacao">Instalação
+                        <option type="radio" value="compraInstalacao">Compra e Instalação
+                    </select>
+                </div>
+                <div class="campo">
+                    <textarea rows="6" style="width: 26em" id="experiencia" name="mensagem"></textarea>
+                </div>
+                <input class="enviar" type="submit" value="Enviar">
+            </fieldset>
+        </form>
     </div>
     <!--Rodapé-->
     <footer>
         <ul id="rodape" class="nav nav-pills nav-justified">
             <li class="nav-item">
-                <a class="nav-link ">
+                <a>
                     <b> Endereço:</b>
                     <p>CEP: 17015-200</p>
                     <p>Rua Gerson França 8-12</p>
@@ -81,7 +81,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link">
+                <a>
                     <b>Contatos:</b>
                     <p>Rosival:(14) 99720-7065</p>
                     <p>Gustavo:(14) 99720-6860</p>
@@ -90,7 +90,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link">
+                <a>
                     <b>Nos siga nas redes sociais:</b>
                     <p>E fico por dentro de todas as novidade.</p>
                     <ul id="social">
@@ -112,4 +112,5 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 <script src="_javaScripit/myScript.js"></script>
+
 </html>
