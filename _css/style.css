@@ -1,11 +1,17 @@
 body{
     padding: 20px;
+    overflow-x:hidden;
+    
 }
 
-/* Design da Nav */
+
+/* Design da header */
+header{
+    margin-bottom: 80px;
+}
+
 .container-fluid{
     background-color:  rgb(77, 77, 77);
-    border-radius: 5px;
 
 }
 .navbar-brand img:hover{
@@ -35,6 +41,24 @@ body{
 #marcas img{
     max-width: 100px;
 }
+
+/*design calculo btn */
+.btncalculo{
+    transition: 1.5s;
+    background-color:white;
+    color: rgb(0, 0, 0);
+    border: solid black;
+    border-radius: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.btncalculo:hover{
+    background-color: black;
+    border: solid white;
+    color: white;
+    transition: 1.5s;
+}
+
 
 /*design dos cards */
 .card{
@@ -154,16 +178,6 @@ body{
    
 }
 
-@keyframes fila{
-    100%{
-        transform: translateX(calc(100vw - 50px));
-    }
-    0%{
-        transform: translateX(calc(-150vw - 50px));
-    }
-    
-}
-
 /* link whats */
 #link1 {
     border-radius: 50px;
@@ -223,16 +237,30 @@ body{
 .bannerHistoria {
    max-width: 100%;
    max-height: 100%;
-
+   
+   
 }
+
+.bannerEscrita{
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    color: rgb(76, 59, 231);
+
+    font-family: 'Rampart One', cursive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+       
+}
+
 .carta-grid{
     position: relative;
     display: grid;
     grid-template-columns: auto auto;
-    text-align: center;
-    
-    
-    
+    text-align: center;   
 }
 
 .carta{
@@ -248,18 +276,19 @@ body{
     text-align: center;
     overflow: hidden;
     white-space: nowrap;
+    animation-delay: 3s;
 }
 
 .carta p{
     animation: transparencia 10s forwards;
-    animation-delay: 4s;
+    animation-delay: 4.5s;
     overflow: hidden;
     opacity: 0;
 }
  
 .animacaopisca{
-    animation: pisca 500ms steps(40) 4s normal, typing 4s steps(40) 1s normal;
-    animation-delay: 2s;
+    animation: pisca 500ms steps(40) 4s normal, typing 5s steps(40) 1s normal;
+    
 }
 
 @keyframes typing{
@@ -291,7 +320,7 @@ body{
 // No media query for `xs` since this is the default in Bootstrap*/
 
 /* Small devices (landscape phones, 346px and up)*/
-@media (min-width: 346px) {
+@media (min-width: 330px) {
     #marcas img{
         max-width: 30px;
     }
@@ -300,13 +329,20 @@ body{
         height: 200px;
     }
     #imgcli img{
-        height: 50px;
+        max-width: 100%;
+        width: 100px;
+        height: 25px;
     }
     .carta-grid{
         grid-template-columns: auto;
     }
     .galeria{
         grid-template-columns: auto;
+    }
+    .bannerEscrita{
+        position: relative;
+        margin-top: 20px;
+
     }
 
 }    
@@ -321,7 +357,9 @@ body{
         height: 480px;
     }
     #imgcli img{
+        width: 120px;
         height: 55px;
+
     }
     .carta-grid{
         grid-template-columns: auto auto;        
@@ -329,6 +367,8 @@ body{
     .galeria{
         grid-template-columns: auto auto;
     }
+    
+    
 
 
 }    
@@ -343,6 +383,8 @@ body{
         height: 480px;
     } 
     #imgcli img{
+    max-width: 100%;
+    width: 120px;    
     height: 60px;
     }
     .carta-grid{
@@ -363,6 +405,7 @@ body{
         height: 480px;
     } 
     #imgcli img{
+    width: 120px;    
     height: 60px;
     }
     .carta-grid{
@@ -370,6 +413,19 @@ body{
     }
     .galeria{
         grid-template-columns: auto auto auto auto; 
+    }
+    .bannerEscrita{
+        position: absolute;
+    }
+
+    @keyframes fila{
+        100%{
+            transform: translateX(calc(100vw - 50px));
+        }
+        0%{
+            transform: translateX(calc(-150vw - 50px));
+        }
+        
     }
 }
 
@@ -383,6 +439,7 @@ body{
         height: 480px;
     } 
     #imgcli img{
+        width: 120px;
         height: 65px;
     }
     .carta-grid{
@@ -391,6 +448,15 @@ body{
     }
     #link1{
         margin-top: 7%;
+    }
+    @keyframes fila{
+        100%{
+            transform: translateX(calc(100vw - 50px));
+        }
+        0%{
+            transform: translateX(calc(-150vw - 50px));
+        }
+        
     }
     
  }

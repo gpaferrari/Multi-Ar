@@ -6,111 +6,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="_css/style.css">
     <link rel="stylesheet" href="_css/contato.css">
 
 </head>
 <!--Cabeçalho do site -->
 
-<body>
-    <header>
-        <nav class="navbar navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="_imagem/logo.png" alt="" width="180"
-                        height="80"></a>
-                <ul class="nav justify-content-end">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid fixed-top">
+            <a class="navbar-brand" href="index.html"><img src="_imagem/logo.png" alt="" width="180" height="80"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
+                <ul class="nav">
                     <li class="nav-item">
                         <a class="nav-link " href="historia.html">História</a>
-                    </li>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contato.html">Contato</a>
                     </li>
                 </ul>
             </div>
-        </nav>
-    </header>
-
-    <!--Formulario-->
-    <div class="corpo">
-        <div id="titulo">
-            <h2 align="center">E-mail</h2>
         </div>
-        <form method="POST" action="_php/formulario.php">
-            <fieldset class="grupo">
-                <div class="campo">
-                    <label name="nome" for="nome">NOME:</label>
-                    <input type="text">
-                </div>
-                <div class="campo">
-                    <label for="tel" name="tel">TEL/CEL:</label>
-                    <input type="text">
-                </div>
-                <div class="campo">
-                    <label for="email" name="email">E-MAIL:</label>
-                    <input type="email">
-                </div>
-                <div class="campo">
-                    <label name="motivo">Motivo do contato:</label>
-                    <select>
-                        <option type="radio" value="Compra">Compra
-                        <option type="radio" value="manutencao">Manutenção
-                        <option type="radio" value="instalacao">Instalação
-                        <option type="radio" value="compraInstalacao">Compra e Instalação
-                    </select>
-                </div>
-                <div class="campo">
-                    <textarea rows="6" style="width: 26em" id="experiencia" name="mensagem"></textarea>
-                </div>
-                <input class="enviar" type="submit" value="Enviar">
-            </fieldset>
-        </form>
-    </div>
-    <!--Rodapé-->
-    <footer>
-        <ul id="rodape" class="nav nav-pills nav-justified">
-            <li class="nav-item">
-                <a>
-                    <b> Endereço:</b>
-                    <p>CEP: 17015-200</p>
-                    <p>Rua Gerson França 8-12</p>
-                    <p>Bairro: Centro </p>
-                    <p>Bauru - SP</p>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a>
-                    <b>Contatos:</b>
-                    <p>Rosival:(14) 99720-7065</p>
-                    <p>Gustavo:(14) 99720-6860</p>
-                    <p>Fixo: (14) 3245-2300 </p>
-                    <p>E-mail: vendas.bauru@leveros.com.br</p>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a>
-                    <b>Nos siga nas redes sociais:</b>
-                    <p>E fico por dentro de todas as novidade.</p>
-                    <ul id="social">
-                        <li id="insta"><a href="https://www.instagram.com/multiar_bauru/"><img
-                                    src="_imagem/insta.png"></a></li>
-                        <li id="face"><a href="https://www.facebook.com/Multi-AR-109447367651617"><img
-                                    src="_imagem/face.png"></a>
-                        </li>
+    </nav>
+</header>
 
-                    </ul>
-                </a>
-            </li>
-        </ul>
-    </footer>
+<!--Formulario-->
+<div class="corpo">
+    <div id="titulo">
+        <h2 align="center">E-mail</h2>
+    </div>
+    <form method="POST" action="_php/formulario.php">
+        <fieldset class="grupo">
+            <div class="campo">
+                <label name="nome" for="nome">NOME:</label>
+                <input type="text">
+            </div>
+            <div class="campo">
+                <label for="tel" name="tel">TEL/CEL:</label>
+                <input type="text">
+            </div>
+            <div class="campo">
+                <label for="email" name="email">E-MAIL:</label>
+                <input type="email">
+            </div>
+            <div class="campo">
+                <label name="motivo">Motivo do contato:</label>
+                <select>
+                    <option type="radio" value="Compra">Compra
+                    <option type="radio" value="manutencao">Manutenção
+                    <option type="radio" value="instalacao">Instalação
+                    <option type="radio" value="compraInstalacao">Compra e Instalação
+                </select>
+            </div>
+            <div class="campo">
+                <textarea rows="6" style="width: 26em" id="experiencia" name="mensagem"></textarea>
+            </div>
+            <input class="enviar" type="submit" value="Enviar" nome="enviar">
+        </fieldset>
+    </form>
+</div>
+<!--Rodapé-->
+<footer>
+    <ul id="rodape" class="nav nav-pills nav-justified">
+        <li class="nav-item">
+            <a>
+                <b> Endereço:</b>
+                <p>CEP: 17015-200</p>
+                <p>Rua Gerson França 8-12</p>
+                <p>Bairro: Centro </p>
+                <p>Bauru - SP</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a>
+                <b>Contatos:</b>
+                <p>Rosival:(14) 99720-7065</p>
+                <p>Gustavo:(14) 99720-6860</p>
+                <p>Fixo: (14) 3245-2300 </p>
+                <p>E-mail: vendas.bauru@leveros.com.br</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a>
+                <b>Nos siga nas redes sociais:</b>
+                <p>E fico por dentro de todas as novidade.</p>
+                <ul id="social">
+                    <li id="insta"><a href="https://www.instagram.com/multiar_bauru/"><img src="_imagem/insta.png"></a>
+                    </li>
+                    <li id="face"><a href="https://www.facebook.com/Multi-AR-109447367651617"><img
+                                src="_imagem/face.png"></a>
+                    </li>
+
+                </ul>
+            </a>
+        </li>
+    </ul>
+</footer>
 
 </body>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+
 <script src="_javaScripit/myScript.js"></script>
 
 </html>

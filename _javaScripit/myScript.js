@@ -18,20 +18,13 @@
         
         var resultado = (tamanho * 750) + (nPessoas * 600) + (eletronico * 600) + iSolar
 
-        
+        var arredondado = resultado.toFixed(2)
 
-
-        return alert("Você precisa de um ar com capacidade de "+ resultado + " BTUh")
+        return alert("Você precisa de um ar com capacidade de "+ arredondado + " BTUh")
     }
 
+    
 
-
-
-
-
-
-
-    //tratamento e-mail
 
     
 
