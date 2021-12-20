@@ -94,6 +94,8 @@ header{
     width: 50px;
     height: 35px;
 
+   cursor: pointer;
+
     background-color: rgba(0, 0, 0, 0.315);
     border-radius: 20px;
     border: white solid 3px;
@@ -105,7 +107,7 @@ header{
     position: relative;
 
     width: 40%;
-    height: 80%;
+    height: 70%;
     min-width: 280px;
     min-height: 280px;
 
@@ -130,9 +132,10 @@ header{
 }
 
 .modaImage img{
-    
+    max-width: 300px;
+    max-height: 400px;
     width: 70%;
-    height: 91%;
+    height: 90%;
     min-width: 200px;
     min-height: 250px;
 }
