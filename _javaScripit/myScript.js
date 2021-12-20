@@ -23,6 +23,20 @@
         return alert("Você precisa de um ar com capacidade de "+ arredondado + " BTUh")
     }
 
+    // modal Avisos
+
+    function iniciarModal (modalID){
+        var modal = document.getElementById(modalID);
+        modal.classList.add('mostrar');
+        modal.addEventListener('click', (e) => {
+            if(e.target.className == 'fechar'){
+                modal.classList.remove('mostrar')
+            }
+        })
+    }
+
+    iniciarModal('modalAviso');
+
     
 
 

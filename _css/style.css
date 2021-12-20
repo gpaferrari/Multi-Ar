@@ -59,6 +59,84 @@ header{
     transition: 1.5s;
 }
 
+/*Modal de Aviso*/
+
+.modalStyle {
+    width: 100vw;
+    height: 100vh;
+    color: blanchedalmond;
+    
+    background-color:rgba(0, 0, 0, 0.5);
+
+    position: fixed;
+    
+    top: 0px;
+    left: 0px;
+
+    z-index: 2050;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.mostrar{
+    display: flex;
+
+}
+
+.fechar{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50px;
+    height: 35px;
+
+    background-color: rgba(0, 0, 0, 0.315);
+    border-radius: 20px;
+    border: white solid 3px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.modaImage{
+    position: relative;
+
+    width: 40%;
+    height: 80%;
+    min-width: 280px;
+    min-height: 280px;
+
+    border: black solid 2px;
+    border-radius: 10px;
+}
+
+@keyframes modal{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -60px, 2);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.mostrar .modaImage{
+    animation: modal 1.5s;
+}
+
+.modaImage img{
+    
+    width: 70%;
+    height: 91%;
+    min-width: 200px;
+    min-height: 250px;
+}
+
 
 /*design dos cards */
 .card{
