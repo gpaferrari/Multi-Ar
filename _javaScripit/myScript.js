@@ -35,10 +35,26 @@
         })
     }
 
-    iniciarModal('modalAviso');
+   
+
+    //modal promoção
+    function oferta (modalOf){
+        var oferta = document.getElementById(modalOf);
+        oferta.classList.add('mostrar');
+        oferta.addEventListener('click', (e) => {
+            if(e.target.className == 'fechar'){
+                oferta.classList.remove('mostrar')
+            }
+        })
+    }
+
+    var catalogo = document.querySelector('.btnOferta');
+    catalogo.addEventListener('click', function(){
+        oferta('modalOferta'); 
+    })
 
     
-
+    
 
     
 
